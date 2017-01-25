@@ -1,0 +1,49 @@
+{
+  "name": "react-jsgraph",
+  "version": "0.0.0",
+  "description": "React components integrating jsGraph",
+  "homepage": "https://github.com/neptunjs/react-jsgraph#readme",
+  "author": {
+    "name": "Michaël Zasso",
+    "email": "targos@protonmail.com"
+  },
+  "files": [
+    "./src"
+  ],
+  "main": "src/index.js",
+  "keywords": [
+    "react",
+    "react-component",
+    "jsgraph"
+  ],
+  "scripts": {
+    "start": "webpack-dev-server",
+    "test": "jest",
+    "eslint": "eslint src",
+    "eslint-fix": "eslint --fix src"
+  },
+  "peerDependencies": {
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2"
+  },
+  "devDependencies": {
+    "babel-core": "^6.22.1",
+    "babel-loader": "^6.2.10",
+    "babel-preset-env": "^1.1.8",
+    "babel-preset-react": "^6.22.0",
+    "eslint": "^3.14.0",
+    "eslint-config-cheminfo": "^1.6.0",
+    "eslint-config-xo-space": "^0.15.0",
+    "eslint-plugin-no-only-tests": "^1.1.0",
+    "eslint-plugin-react": "^6.9.0",
+    "jest-cli": "^18.1.0",
+    "npm-run-all": "^4.0.1",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "react-test-renderer": "^15.4.2",
+    "webpack": "^1.14.0",
+    "webpack-dev-server": "^1.16.2"
+  },
+  "repository": "git@github.com:targos/react-jsgraph.git",
+  "license": "MIT"
+}
