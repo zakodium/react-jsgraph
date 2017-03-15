@@ -1,55 +1,55 @@
 {
-    "name": "react-jsgraph",
-    "version": "0.0.0",
-    "description": "React components integrating jsGraph",
-    "homepage": "https://github.com/neptunjs/react-jsgraph#readme",
-    "author": {
-        "name": "Michaël Zasso",
-        "email": "targos@protonmail.com"
-    },
-    "files": [
-        "lib",
-        "lib-es6"
-    ],
-    "main": "lib/index.js",
-    "keywords": [
-        ""
-    ],
-    "module": "lib-es6/index.js",
-    "scripts": {
-        "compile": "babel src --out-dir lib --ignore __tests__ --quiet",
-        "compile-es6": "BABEL_ENV=es6 babel src --out-dir lib-es6 --ignore __tests__ --quiet",
-        "start": "webpack-dev-server",
-        "test": "jest",
-        "eslint": "eslint src",
-        "eslint-fix": "eslint --fix src",
-        "prepublishOnly": "run-p compile compile-es6"
-    },
-    "peerDependencies": {
-        "react": "^15.4.2",
-        "react-dom": "^15.4.2"
-    },
-    "devDependencies": {
-        "babel-cli": "^6.22.2",
-        "babel-core": "^6.22.1",
-        "babel-loader": "^6.2.10",
-        "babel-preset-env": "^1.1.8",
-        "babel-preset-react": "^6.22.0",
-        "eslint": "^3.14.1",
-        "eslint-config-cheminfo": "^1.6.0",
-        "eslint-plugin-no-only-tests": "^1.1.0",
-        "eslint-plugin-react": "^6.9.0",
-        "jest-cli": "^19.0.2",
-        "npm-run-all": "^4.0.1",
-        "react": "^15.4.2",
-        "react-dom": "^15.4.2",
-        "react-test-renderer": "^15.4.2",
-        "webpack": "^2.2.1",
-        "webpack-dev-server": "^2.4.2"
-    },
-    "repository": "git://github.com/neptunjs/react-jsgraph.git",
-    "license": "MIT",
-    "dependencies": {
-        "node-jsgraph": "^1.16.26"
-    }
+  "name": "react-jsgraph",
+  "version": "0.1.0",
+  "description": "React components integrating jsGraph",
+  "homepage": "https://github.com/neptunjs/react-jsgraph#readme",
+  "author": {
+    "name": "Michaël Zasso",
+    "email": "targos@protonmail.com"
+  },
+  "files": [
+    "lib",
+    "lib-es6"
+  ],
+  "main": "lib/index.js",
+  "keywords": [
+    ""
+  ],
+  "module": "lib-es6/index.js",
+  "scripts": {
+    "compile": "babel src --out-dir lib --ignore __tests__ --quiet",
+    "compile-es6": "BABEL_ENV=es6 babel src --out-dir lib-es6 --ignore __tests__ --quiet",
+    "start": "webpack-dev-server",
+    "test": "jest",
+    "eslint": "eslint src",
+    "eslint-fix": "eslint --fix src",
+    "prepublishOnly": "run-p compile compile-es6"
+  },
+  "peerDependencies": {
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.22.2",
+    "babel-core": "^6.22.1",
+    "babel-loader": "^6.2.10",
+    "babel-preset-env": "^1.1.8",
+    "babel-preset-react": "^6.22.0",
+    "eslint": "^3.14.1",
+    "eslint-config-cheminfo": "^1.6.0",
+    "eslint-plugin-no-only-tests": "^1.1.0",
+    "eslint-plugin-react": "^6.9.0",
+    "jest-cli": "^19.0.2",
+    "npm-run-all": "^4.0.1",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "react-test-renderer": "^15.4.2",
+    "webpack": "^2.2.1",
+    "webpack-dev-server": "^2.4.2"
+  },
+  "repository": "git://github.com/neptunjs/react-jsgraph.git",
+  "license": "MIT",
+  "dependencies": {
+    "node-jsgraph": "^1.16.26"
+  }
 }
