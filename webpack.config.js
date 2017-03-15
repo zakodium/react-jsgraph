@@ -14,15 +14,15 @@ for (const example of examples) {
 module.exports = {
     entry: entry,
     output: {
-        path: './',
+        path: __dirname,
         publicPath: '/',
         filename: '[name].js'
     },
     module: {
-        loaders: [
+        rules: [
             {
                 exclude: /node_modules/,
-                loader: 'babel-loader'
+                use: 'babel-loader'
             }
         ]
     },

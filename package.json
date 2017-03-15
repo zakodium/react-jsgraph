@@ -39,13 +39,13 @@
         "eslint-config-cheminfo": "^1.6.0",
         "eslint-plugin-no-only-tests": "^1.1.0",
         "eslint-plugin-react": "^6.9.0",
-        "jest-cli": "^18.1.0",
+        "jest-cli": "^19.0.2",
         "npm-run-all": "^4.0.1",
         "react": "^15.4.2",
         "react-dom": "^15.4.2",
         "react-test-renderer": "^15.4.2",
-        "webpack": "^1.14.0",
-        "webpack-dev-server": "^1.16.2"
+        "webpack": "^2.2.1",
+        "webpack-dev-server": "^2.4.2"
     },
     "repository": "git://github.com/neptunjs/react-jsgraph.git",
     "license": "MIT",

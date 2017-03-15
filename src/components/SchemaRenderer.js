@@ -8,13 +8,22 @@ export default class SchemaRenderer extends Component {
     }
 
     componentDidMount() {
-        const schema = this.props.schema;
-        var graph = JsGraph.fromSchema(schema, this.refs.root);
-        graph.resize(500, 300);
-        graph.drawSeries(true);
+        this.updateGraph();
+    }
+
+    componentDidUpdate() {
+        this.updateGraph();
     }
 
     render() {
-        return <div ref="root"></div>;
+        return <div style={this.props.style} ref="root" />;
+    }
+
+    updateGraph() {
+        const schema = this.props.schema;
+        const root = this.refs.root;
+        const graph = JsGraph.fromSchema(schema, this.refs.root);
+        graph.resize(this.props.width || root.clientWidth, this.props.height || root.clientHeight);
+        graph.drawSeries(true);
     }
 }

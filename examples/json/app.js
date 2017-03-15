@@ -36,6 +36,7 @@ const App = class App extends Component {
             <div>
                 <Schema
                     schema={json}
+                    style={{height: 500}}
                 />
             </div>
         );
