@@ -3,10 +3,6 @@
   "version": "0.1.2",
   "description": "React components integrating jsGraph",
   "homepage": "https://github.com/neptunjs/react-jsgraph#readme",
-  "author": {
-    "name": "Michaël Zasso",
-    "email": "targos@protonmail.com"
-  },
   "files": [
     "lib",
     "lib-es6"
@@ -26,30 +22,30 @@
     "prepublishOnly": "run-p compile compile-es6"
   },
   "peerDependencies": {
-    "react": "^15.4.2",
-    "react-dom": "^15.4.2"
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0"
   },
   "devDependencies": {
-    "babel-cli": "^6.22.2",
-    "babel-core": "^6.22.1",
-    "babel-loader": "^6.2.10",
-    "babel-preset-env": "^1.1.8",
-    "babel-preset-react": "^6.22.0",
-    "eslint": "^3.14.1",
-    "eslint-config-cheminfo": "^1.6.0",
-    "eslint-plugin-no-only-tests": "^1.1.0",
-    "eslint-plugin-react": "^6.9.0",
-    "jest-cli": "^19.0.2",
-    "npm-run-all": "^4.0.1",
-    "react": "^15.4.2",
-    "react-dom": "^15.4.2",
-    "react-test-renderer": "^15.4.2",
-    "webpack": "^2.2.1",
-    "webpack-dev-server": "^2.4.2"
+    "@babel/cli": "^7.0.0-beta.37",
+    "@babel/core": "^7.0.0-beta.37",
+    "@babel/preset-env": "^7.0.0-beta.37",
+    "@babel/preset-react": "^7.0.0-beta.37",
+    "babel-loader": "^8.0.0-beta.0",
+    "eslint": "^4.15.0",
+    "eslint-config-cheminfo": "^1.9.1",
+    "eslint-plugin-no-only-tests": "^2.0.0",
+    "eslint-plugin-react": "^7.5.1",
+    "jest": "^22.0.4",
+    "npm-run-all": "^4.1.2",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-test-renderer": "^16.2.0",
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "2.9.7"
   },
   "repository": "git://github.com/neptunjs/react-jsgraph.git",
   "license": "MIT",
   "dependencies": {
-    "node-jsgraph": "^1.16.26"
+    "node-jsgraph": "^1.16.29"
   }
 }
