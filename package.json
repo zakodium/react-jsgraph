@@ -1,6 +1,6 @@
 {
   "name": "react-jsgraph",
-  "version": "0.1.2",
+  "version": "1.0.0",
   "description": "React components integrating jsGraph",
   "homepage": "https://github.com/neptunejs/react-jsgraph#readme",
   "files": [
