@@ -46,6 +46,6 @@
   "repository": "git://github.com/neptunejs/react-jsgraph.git",
   "license": "MIT",
   "dependencies": {
-    "node-jsgraph": "^1.16.29"
+    "node-jsgraph": "^2.0.69"
   }
 }

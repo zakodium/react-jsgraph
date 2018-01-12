@@ -1,4 +1,4 @@
-import React, {Component} from 'react'; // eslint-disable-line no-unused-vars
+import React, { Component } from 'react'; // eslint-disable-line no-unused-vars
 
 import JsGraph from 'node-jsgraph';
 
@@ -23,7 +23,7 @@ export default class SchemaRenderer extends Component {
         const schema = this.props.schema;
         const root = this.refs.root;
         root.innerHTML = '';
-        const graph = JsGraph.fromSchema(schema, this.refs.root);
+        const graph = JsGraph.fromJSON(schema, this.refs.root);
         graph.resize(this.props.width || root.clientWidth, this.props.height || root.clientHeight);
         graph.drawSeries(true);
     }
