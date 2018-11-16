@@ -1,7 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { Graph } from '../src';
+import { Chart } from '../src';
 
 import jsonAnnotationSimple from './examples/json/annotation/simple.json';
 import jsonAnnotationSerie from './examples/json/annotation/serie.json';
@@ -47,7 +47,7 @@ const scatter = [
 ];
 
 function getGraph(chart) {
-  return <Graph style={{ height: 500, width: 800 }} chart={chart} />;
+  return <Chart style={{ height: 500, width: 800 }} chart={chart} />;
 }
 
 const annotationsStory = storiesOf('From JSON/Annotations', module);

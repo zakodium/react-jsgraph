@@ -1,7 +1,7 @@
 import React, { Component } from 'react'; // eslint-disable-line no-unused-vars
 import JsGraph from 'node-jsgraph';
 
-export default class Graph extends Component {
+export default class Chart extends Component {
   componentDidMount() {
     this.updateGraph();
   }

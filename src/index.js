@@ -1,3 +1,3 @@
-import Graph from './components/Graph';
+import Chart from './components/Chart';
 
-export { Graph };
+export { Chart };
