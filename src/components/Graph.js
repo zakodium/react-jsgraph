@@ -11,7 +11,6 @@ export default class Graph extends Component {
   }
 
   updateGraph() {
-    console.log('updating...');
     const chart = this.props.chart;
     const root = this.el;
     root.innerHTML = '';
