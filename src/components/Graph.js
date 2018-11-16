@@ -11,6 +11,7 @@ export default class Graph extends Component {
   }
 
   updateGraph() {
+    console.log('updating...');
     const chart = this.props.chart;
     const root = this.el;
     root.innerHTML = '';
@@ -19,7 +20,7 @@ export default class Graph extends Component {
       this.props.width || root.clientWidth,
       this.props.height || root.clientHeight
     );
-    graph.drawSeries(true);
+    graph.draw();
   }
 
   render() {
