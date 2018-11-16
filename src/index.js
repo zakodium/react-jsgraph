@@ -1,3 +1,3 @@
-import Schema from './components/SchemaRenderer';
+import Graph from './components/Graph';
 
-export {Schema};
+export { Graph };
