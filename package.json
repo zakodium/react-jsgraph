@@ -2,7 +2,7 @@
   "name": "react-jsgraph",
   "version": "1.0.0",
   "description": "React components integrating jsGraph",
-  "homepage": "https://github.com/neptunejs/react-jsgraph#readme",
+  "homepage": "https://github.com/zakodium/react-jsgraph#readme",
   "files": [
     "lib",
     "lib-es6"
@@ -50,7 +50,7 @@
     "react": "^16.6.3",
     "react-dom": "^16.6.3"
   },
-  "repository": "git://github.com/neptunejs/react-jsgraph.git",
+  "repository": "git://github.com/zakodium/react-jsgraph.git",
   "license": "MIT",
   "dependencies": {
     "node-jsgraph": "^2.1.9"
