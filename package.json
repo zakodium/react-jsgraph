@@ -23,36 +23,36 @@
     "test": "npm run eslint"
   },
   "peerDependencies": {
-    "react": "^16.0.0",
-    "react-dom": "^16.0.0"
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4"
   },
   "devDependencies": {
-    "@babel/cli": "^7.1.5",
-    "@babel/core": "^7.1.6",
-    "@babel/preset-env": "^7.1.6",
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.4.0",
+    "@babel/preset-env": "^7.4.2",
     "@babel/preset-react": "^7.0.0",
-    "@storybook/addon-actions": "^4.0.4",
-    "@storybook/addon-info": "^4.0.4",
-    "@storybook/addon-knobs": "^4.0.4",
-    "@storybook/addon-links": "^4.0.4",
-    "@storybook/addons": "^4.0.4",
-    "@storybook/react": "^4.0.4",
+    "@storybook/addon-actions": "^5.0.3",
+    "@storybook/addon-info": "^5.0.3",
+    "@storybook/addon-knobs": "^5.0.3",
+    "@storybook/addon-links": "^5.0.3",
+    "@storybook/addons": "^5.0.3",
+    "@storybook/react": "^5.0.3",
     "babel-eslint": "^10.0.1",
-    "babel-loader": "^8.0.4",
+    "babel-loader": "^8.0.5",
     "cross-env": "^5.2.0",
-    "eslint": "^5.8.0",
-    "eslint-config-cheminfo": "^1.18.0",
-    "eslint-config-neptune-react": "^2.5.2",
-    "eslint-plugin-import": "^2.14.0",
-    "eslint-plugin-jest": "^21.27.2",
-    "eslint-plugin-react": "^7.11.1",
-    "jest": "^23.6.0",
+    "eslint": "^5.15.3",
+    "eslint-config-cheminfo": "^1.20.0",
+    "eslint-config-neptune-react": "^2.6.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-jest": "^22.4.1",
+    "eslint-plugin-react": "^7.12.4",
+    "jest": "^24.5.0",
     "react": "^16.6.3",
     "react-dom": "^16.6.3"
   },
   "repository": "git://github.com/zakodium/react-jsgraph.git",
   "license": "MIT",
   "dependencies": {
-    "node-jsgraph": "^2.1.9"
+    "node-jsgraph": "^2.1.15"
   }
 }
