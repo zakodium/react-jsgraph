@@ -1,35 +1,24 @@
-import React, { Component } from 'react'; // eslint-disable-line no-unused-vars
+import React, { useRef, useEffect } from 'react';
 import JsGraph from 'node-jsgraph';
 
-export default class Chart extends Component {
-  componentDidMount() {
-    this.updateGraph();
-  }
-
-  componentDidUpdate() {
-    this.updateGraph();
-  }
-
-  updateGraph() {
-    const chart = this.props.chart;
-    const root = this.el;
+export default function Chart(props) {
+  const { chart, className, style, width, height } = props;
+  const ref = useRef();
+  useEffect(() => {
+    const root = ref.current;
     root.innerHTML = '';
-    const graph = JsGraph.fromJSON(chart, this.el);
+    const graph = JsGraph.fromJSON(chart, root);
     graph.resize(
-      this.props.width || root.clientWidth,
-      this.props.height || root.clientHeight
+      width || root.clientWidth,
+      height || root.clientHeight
     );
     graph.draw();
-  }
-
-  render() {
-    return (
-      <div
-        style={this.props.style}
-        ref={(el) => {
-          this.el = el;
-        }}
-      />
-    );
-  }
+  }, [chart, width, height]);
+  return (
+    <div
+      className={className}
+      style={style}
+      ref={ref}
+    />
+  );
 }

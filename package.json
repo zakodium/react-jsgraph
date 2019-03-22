@@ -9,7 +9,10 @@
   ],
   "main": "lib/index.js",
   "keywords": [
-    ""
+    "react",
+    "jsgraph",
+    "graph",
+    "chart"
   ],
   "module": "lib-es6/index.js",
   "scripts": {
@@ -23,8 +26,8 @@
     "test": "npm run eslint"
   },
   "peerDependencies": {
-    "react": "^16.8.4",
-    "react-dom": "^16.8.4"
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.2.3",
@@ -47,8 +50,8 @@
     "eslint-plugin-jest": "^22.4.1",
     "eslint-plugin-react": "^7.12.4",
     "jest": "^24.5.0",
-    "react": "^16.6.3",
-    "react-dom": "^16.6.3"
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4"
   },
   "repository": "git://github.com/zakodium/react-jsgraph.git",
   "license": "MIT",

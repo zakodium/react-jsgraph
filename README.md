@@ -11,7 +11,7 @@ npm install --save react-jsgraph
 ## Usage
 
 ```jsx
-import { Graph } from 'react-jsgraph';
+import { Chart } from 'react-jsgraph';
 
 const json = {
   title: 'My chart',
@@ -24,7 +24,7 @@ const json = {
 };
 
 function App() {
-  return <Schema schema={json} style={{ height: 500 }} />;
+  return <Chart chart={json} style={{ height: 500 }} />;
 }
 ```
 
