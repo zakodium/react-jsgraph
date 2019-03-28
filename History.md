@@ -1,3 +1,17 @@
+# [2.0.0](https://github.com/zakodium/react-jsgraph/compare/v1.0.0...v2.0.0) (2019-03-28)
+
+
+### Code Refactoring
+
+* use React hooks ([c190527](https://github.com/zakodium/react-jsgraph/commit/c190527))
+
+
+### BREAKING CHANGES
+
+* The package now uses React hooks.
+
+
+
 <a name="1.0.0"></a>
 
 # [1.0.0](https://github.com/zakodium/react-jsgraph/compare/v0.1.2...v1.0.0) (2018-01-09)
