@@ -15,6 +15,7 @@
     "chart"
   ],
   "module": "lib-es6/index.js",
+  "sideEffect": false,
   "scripts": {
     "build-docs": "build-storybook -o docs",
     "compile": "babel src --out-dir lib --ignore __tests__ --quiet",
@@ -56,6 +57,7 @@
   "repository": "git://github.com/zakodium/react-jsgraph.git",
   "license": "MIT",
   "dependencies": {
+    "@nivo/core": "^0.55.0",
     "node-jsgraph": "^2.1.15"
   }
 }

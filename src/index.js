@@ -1,3 +1,2 @@
-import Chart from './components/Chart';
-
-export { Chart };
+export * from './components/Chart';
+export * from './components/ResponsiveChart';
