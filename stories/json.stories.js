@@ -1,5 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
+import { number } from '@storybook/addon-knobs';
 
 import { Chart } from '../src';
 
@@ -47,7 +48,14 @@ const scatter = [
 ];
 
 function getGraph(chart) {
-  return <Chart style={{ height: 500, width: 800 }} chart={chart} />;
+  return (
+    <Chart
+      style={{ height: 500, width: 800 }}
+      width={number('width', 800)}
+      height={number('height', 500)}
+      chart={chart}
+    />
+  );
 }
 
 const annotationsStory = storiesOf('From JSON/Annotations', module);

@@ -3,22 +3,20 @@ import JsGraph from 'node-jsgraph';
 
 export default function Chart(props) {
   const { chart, className, style, width, height } = props;
-  const ref = useRef();
+  const domRef = useRef();
+  const graphRef = useRef();
   useEffect(() => {
-    const root = ref.current;
+    const root = domRef.current;
     root.innerHTML = '';
     const graph = JsGraph.fromJSON(chart, root);
-    graph.resize(
-      width || root.clientWidth,
-      height || root.clientHeight
-    );
+    graphRef.current = graph;
+    root.querySelector('svg').style.outline = 'none';
+  }, [chart]);
+  useEffect(() => {
+    const root = domRef.current;
+    const graph = graphRef.current;
+    graph.resize(width || root.clientWidth, height || root.clientHeight);
     graph.draw();
-  }, [chart, width, height]);
-  return (
-    <div
-      className={className}
-      style={style}
-      ref={ref}
-    />
-  );
+  }, [width, height]);
+  return <div className={className} style={style} ref={domRef} />;
 }
