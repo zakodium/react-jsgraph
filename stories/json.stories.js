@@ -24,13 +24,13 @@ const annotations = [
   ['Simple', jsonAnnotationSimple],
   ['Serie', jsonAnnotationSerie],
   ['Types', jsonAnnotationTypes],
-  ['Advanced', jsonAnnotationAdvanced]
+  ['Advanced', jsonAnnotationAdvanced],
 ];
 
 const bar = [
   ['Simple', jsonBarSimple],
   ['Style', jsonBarStyle],
-  ['Error bars', jsonBarErrorBars]
+  ['Error bars', jsonBarErrorBars],
 ];
 
 const line = [
@@ -38,13 +38,13 @@ const line = [
   ['Axis', jsonLineAxis],
   ['Error bars', jsonLineErrorBars],
   ['Style', jsonLineStyle],
-  ['Advanced style', jsonLineStyleAdvanced]
+  ['Advanced style', jsonLineStyleAdvanced],
 ];
 
 const scatter = [
   ['Simple', jsonScatterSimple],
   ['Axis', jsonScatterAxis],
-  ['Style', jsonScatterStyle]
+  ['Style', jsonScatterStyle],
 ];
 
 function getGraph(chart) {
