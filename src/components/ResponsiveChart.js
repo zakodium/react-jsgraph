@@ -1,7 +1,7 @@
 import React from 'react';
-import { ResponsiveWrapper } from '@nivo/core';
 
 import { Chart } from './Chart';
+import ResponsiveWrapper from './ResponsiveWrapper';
 
 export function ResponsiveChart(props) {
   return (

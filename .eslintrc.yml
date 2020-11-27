@@ -1,2 +1,1 @@
-extends: cheminfo-react
-parser: babel-eslint
+extends: '@zakodium/eslint-config/react'

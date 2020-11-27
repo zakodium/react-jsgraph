@@ -1,5 +1,6 @@
 import React, { useRef, useEffect } from 'react';
-import JsGraph from 'node-jsgraph';
+
+import JsGraph from '../jsgraph';
 
 export function Chart(props) {
   const { chart, className, style, width, height } = props;

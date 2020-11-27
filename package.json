@@ -15,52 +15,54 @@
     "chart"
   ],
   "module": "lib-es6/index.js",
+  "browser": {
+    "./src/jsgraph.js": "./src/jsgraph.browser.js",
+    "./lib/jsgraph.js": "./lib/jsgraph.browser.js",
+    "./lib-es6/jsgraph.js": "./lib-es6/jsgraph.browser.js"
+  },
   "sideEffect": false,
   "scripts": {
-    "build-docs": "build-storybook -o docs",
     "compile": "babel src --out-dir lib --ignore __tests__ --quiet",
     "compile-es6": "cross-env BABEL_ENV=es6 babel src --out-dir lib-es6 --ignore __tests__ --quiet",
-    "eslint": "eslint --cache src stories",
+    "eslint": "eslint src stories",
     "eslint-fix": "npm run eslint -- --fix",
-    "prepare": "npm run compile && npm run compile-es6",
+    "prepublishOnly": "npm run compile && npm run compile-es6",
     "storybook": "start-storybook -p 6006",
-    "test": "npm run eslint"
+    "test": "npm run eslint",
+    "build-storybook": "build-storybook"
   },
   "peerDependencies": {
     "react": ">=16.8.0",
     "react-dom": ">=16.8.0"
   },
   "devDependencies": {
-    "@babel/cli": "^7.5.5",
-    "@babel/core": "^7.5.5",
-    "@babel/preset-env": "^7.5.5",
-    "@babel/preset-react": "^7.0.0",
-    "@storybook/addon-actions": "^5.1.10",
-    "@storybook/addon-info": "^5.1.10",
-    "@storybook/addon-knobs": "^5.1.10",
-    "@storybook/addon-links": "^5.1.10",
-    "@storybook/addons": "^5.1.10",
-    "@storybook/react": "^5.1.10",
-    "babel-eslint": "^10.0.2",
-    "babel-loader": "^8.0.6",
-    "cross-env": "^5.2.0",
-    "eslint": "^6.1.0",
-    "eslint-config-cheminfo": "^2.0.3",
-    "eslint-config-cheminfo-react": "^3.0.4",
-    "eslint-plugin-import": "^2.18.2",
-    "eslint-plugin-jest": "^22.15.0",
-    "eslint-plugin-prettier": "^3.1.0",
-    "eslint-plugin-react": "^7.14.3",
-    "eslint-plugin-react-hooks": "^1.7.0",
-    "jest": "^24.8.0",
-    "prettier": "^1.18.2",
-    "react": "^16.9.0",
-    "react-dom": "^16.9.0"
+    "@babel/cli": "^7.12.8",
+    "@babel/core": "^7.12.9",
+    "@babel/plugin-transform-modules-commonjs": "^7.12.1",
+    "@babel/preset-react": "^7.12.7",
+    "@storybook/addon-actions": "^6.1.7",
+    "@storybook/addon-essentials": "^6.1.7",
+    "@storybook/addon-links": "^6.1.7",
+    "@storybook/react": "^6.1.7",
+    "@zakodium/eslint-config": "^2.2.0",
+    "babel-loader": "^8.2.2",
+    "cross-env": "^7.0.2",
+    "eslint": "^7.14.0",
+    "prettier": "^2.2.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
   },
   "repository": "git://github.com/zakodium/react-jsgraph.git",
   "license": "MIT",
   "dependencies": {
-    "@nivo/core": "^0.59.1",
-    "node-jsgraph": "^2.2.23"
+    "node-jsgraph": "^2.4.2",
+    "resize-observer-polyfill": "^1.5.1"
+  },
+  "prettier": {
+    "arrowParens": "always",
+    "semi": true,
+    "singleQuote": true,
+    "tabWidth": 2,
+    "trailingComma": "all"
   }
 }
